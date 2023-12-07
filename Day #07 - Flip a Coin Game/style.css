@@ -1,0 +1,123 @@
+/* Importa a fonte Rubik do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+/* Define estilos globais para o documento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Estilos para o corpo do documento */
+body {
+  height: 100%;
+  background: linear-gradient(to right, #575ce5 50%, #f9fbfc 50%) fixed;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+  background: #fff;
+  width: 400px;
+  padding: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+/* Estilos para as estatísticas no contêiner */
+.stats {
+  text-align: right;
+  color: #101020;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+/* Estilos para a moeda */
+.coin {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin: 50px auto;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* Estilos específicos para a face "tails" (coroa) da moeda */
+.tails {
+  transform: rotateX(180deg);
+}
+
+/* Estilos para os botões no contêiner */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para a imagem da moeda dentro da div .coin */
+.coin img {
+  width: 145px;
+}
+
+/* Estilos para as faces "heads" e "tails" da moeda */
+.heads,
+.tails {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Estilos para os botões */
+button {
+  width: 120px;
+  padding: 10px 0;
+  border: 2.5px solid #424ae0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos específicos para o botão "Flip" */
+#flip-button {
+  background: #424ae0;
+  color: #fff;
+}
+
+/* Estilos específicos para o botão "Flip" quando desativado */
+#flip-button:disabled {
+  background-color: #e1e0ee;
+  color: #101020;
+  border-color: #e1e0ee;
+}
+
+/* Estilos específicos para o botão "Reset" */
+#reset-button {
+  background: #fff;
+  color: #424ae0;
+}
+
+/* Animação para a rotação da face "tails" */
+@keyframes spin-tails {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(1980deg);
+  }
+}
+
+/* Animação para a rotação da face "heads" */
+@keyframes spin-heads {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(2160deg);
+  }
+}
