@@ -1,0 +1,141 @@
+/* Importa a fonte Ubuntu do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* Estilos globais para o documento */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu";
+}
+
+/* Estilos para o corpo do documento */
+body {
+  background: #43a047;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+  width: 360px;
+  height: 400px;
+  margin: 8% auto;
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título dos formulários */
+h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+}
+
+/* Estilos para os formulários dentro do contêiner */
+.container form {
+  width: 280px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transition: 0.5s;
+}
+
+/* Estilos para as entradas nos formulários */
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+/* Estilos para o texto do placeholder nas entradas */
+::placeholder {
+  color: #777;
+}
+
+/* Estilos para a caixa de botões */
+.btn-box {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Estilos para os botões nos formulários */
+form button {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background: linear-gradient(to right, #1565c0, #1976d2);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+/* Estilos específicos para o segundo formulário */
+#form2 {
+  left: 450px;
+}
+
+/* Estilos específicos para o terceiro formulário */
+#form3 {
+  left: 450px;
+}
+
+/* Estilos para a linha de progresso dos passos */
+.step-row {
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+
+/* Estilos para as colunas dos passos */
+.step-col {
+  width: 120px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+/* Estilos para a barra de progresso */
+#progress {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background: linear-gradient(to right, #1565c0, #1976d2);
+}
+
+/* Estilos para o texto pequeno indicando o número do passo */
+small {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+/* Estilos para a seta de progresso */
+#progress::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #1976d2;
+}

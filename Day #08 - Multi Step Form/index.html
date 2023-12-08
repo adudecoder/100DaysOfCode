@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importação do arquivo de estilo externo -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Day #8 - Multi Step Form</title>
+  </head>
+
+  <body>
+    <!-- Contêiner principal da aplicação -->
+    <div class="container">
+      <!-- Primeiro formulário do passo 1 -->
+      <form id="form1">
+        <h3>Create Account</h3>
+        <input type="text" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+
+        <!-- Botão "Next" para avançar para o próximo passo -->
+        <div class="btn-box">
+          <button type="button" id="next1">Next</button>
+        </div>
+      </form>
+
+      <!-- Segundo formulário do passo 2 -->
+      <form id="form2">
+        <h3>Social Links</h3>
+        <input type="text" placeholder="Instagram" />
+        <input type="text" placeholder="Github" />
+        <input type="text" placeholder="Twitter" />
+
+        <!-- Botões "Back" e "Next" para navegação entre passos -->
+        <div class="btn-box">
+          <button type="button" id="back1">Back</button>
+          <button type="button" id="next2">Next</button>
+        </div>
+      </form>
+
+      <!-- Terceiro formulário do passo 3 -->
+      <form id="form3">
+        <h3>Personal Info</h3>
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
+        <input type="text" placeholder="Phone Num" required />
+
+        <!-- Botões "Back" e "Submit" para navegação e envio do formulário -->
+        <div class="btn-box">
+          <button type="button" id="back2">Back</button>
+          <button type="button" id="submit">Submit</button>
+        </div>
+      </form>
+
+      <!-- Indicadores visuais de progresso -->
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step 1</small></div>
+        <div class="step-col"><small>Step 2</small></div>
+        <div class="step-col"><small>Step 3</small></div>
+      </div>
+    </div>
+
+    <!-- Inclusão do arquivo de script JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
