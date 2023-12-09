@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Estilo global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+  background-color: #895cf3;
+}
+
+/* Estilo do contêiner principal */
+.container {
+  width: 500px;
+  background: #fff;
+  padding: 80px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 30px 45px rgba(18, 8, 39, 0.2);
+}
+
+/* Estilo do título */
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Estilo do texto destacado no título */
+h2 span {
+  color: #895cf3;
+}
+
+/* Estilo dos elementos de entrada na primeira seção */
+.wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 70px 0;
+  gap: 10px;
+}
+
+/* Estilo das entradas de número na primeira seção */
+.wrapper-1 input {
+  width: 100px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Estilo geral das entradas de número */
+input {
+  padding: 15px 10px;
+  border: 1px solid #bbc0c5;
+  border-radius: 5px;
+  color: #170444;
+  outline: none;
+}
+
+/* Estilo das entradas de número quando focadas */
+input:focus {
+  border: 2px solid #895cf3;
+}
+
+/* Estilo das etiquetas de texto */
+label {
+  color: #170444;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+/* Estilo da caixa contendo as entradas de largura e altura */
+.box {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Estilo das entradas de largura e altura */
+.wrapper-2 input,
+.wrapper-3 input {
+  width: 100%;
+  font-size: 18px;
+}
