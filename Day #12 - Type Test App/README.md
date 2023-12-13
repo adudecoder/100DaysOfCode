@@ -1,7 +1,7 @@
 # Day #12
 
 ### Type Test App
-In this tutorial ([Open in Youtube](https://youtu.be/uWwDO5n9tO8)),  I am gonna showing to you how to code a speed test app with javascript. in this tutorial also we use a quote database api and we get data from api and this code is also responsive❗️This javascript typing speed test app also show how many words you type per minutes!
+This JavaScript code implements a typing test application. It fetches a random quote from an API, displays it with character-wise styling, and tracks user input. The test has a timer, calculates typing speed (words per minute), and evaluates accuracy. The user can start and stop the test.
 
 # Screenshot
 Here we have project screenshot :
