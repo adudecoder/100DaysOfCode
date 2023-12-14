@@ -1,8 +1,7 @@
 # Day #13
 
 ### Translator App
-In this tutorial ([Open in Youtube](https://youtu.be/WGRIMv790UI)),  I am gonna showing to you how to code a translator app with javascript. in this tutorial also we use a translate api and we get data from api and this code is also responsive❗️
-in this video we have a google translate clone 😁
+This JavaScript code creates a simple translation application where users can enter text in a language, choose the source and target languages, and get the translation.
 
 # Screenshot
 Here we have project screenshot :
