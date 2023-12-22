@@ -7,7 +7,11 @@ const finalValue = document.getElementById("final-value");
 const rotationValues = [
     { minDegree: 0, maxDegree: 30, value: 2 },
     { minDegree: 31, maxDegree: 90, value: 1 },
-    // ... (similar entries for other values)
+    { minDegree: 91, maxDegree: 150, value: 6 },
+    { minDegree: 151, maxDegree: 210, value: 5 },
+    { minDegree: 211, maxDegree: 270, value: 4 },
+    { minDegree: 271, maxDegree: 330, value: 3 },
+    { minDegree: 331, maxDegree: 360, value: 2 },
 ];
 
 // Size of pieces on the wheel
@@ -18,6 +22,8 @@ var pieColors = ["#1565c0", "#2196f3", "#1565c0", "#2196f3", "#1565c0", "#2196f3
 
 // Creating a pie chart using Chart.js
 let myChart = new Chart(wheel, {
+    // Display text on pie chart
+    plugins: [ChartDataLabels],
     type: "pie",
     data: {
         labels: [1, 2, 3, 4, 5, 6],
