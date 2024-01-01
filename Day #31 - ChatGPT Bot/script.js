@@ -26,7 +26,7 @@ function sendMessage() {
         userInput.value = '';
         appendMessage('user', message);
         setTimeout(() => {
-            appendMessage('bot', 'This Source Coded By Reza Mehdikhanlou \nYoutube : @AsmrProg');
+            appendMessage('bot', 'This Source Coded By Victor Martins \nGithub : @adudecoder');
             buttonIcon.classList.add('fa-solid', 'fa-paper-plane');
             buttonIcon.classList.remove('fas', 'fa-spinner', 'fa-pulse');
         }, 2000);
